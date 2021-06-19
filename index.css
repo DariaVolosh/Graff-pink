@@ -1,0 +1,400 @@
+@font-face {
+  font-family: Lavanderia;
+  src: url("./fonts/LavanderiaRegular.otf");
+}
+@font-face {
+  font-family: "Alte Haas Grotesk";
+  src: url("./fonts/AlteHaasGroteskBold.ttf");
+}
+@font-face {
+  font-family: UniversLt;
+  src: url(./fonts/UniversLTLight.ttf);
+}
+@font-face {
+  font-family: SegoeUI;
+  src: url(./fonts/SegoeUILight.woff);
+}
+body .banner-and-nav {
+  background-image: url(./images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 650px;
+  position: relative;
+}
+body .banner-and-nav .color {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: inherit;
+}
+body .banner-and-nav .color nav {
+  background-color: white;
+  opacity: 0.9;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+}
+body .banner-and-nav .color nav div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+}
+body .banner-and-nav .color nav div h1 {
+  font-family: "Lavanderia";
+  font-size: 41px;
+}
+body .banner-and-nav .color nav div h1 span {
+  color: #b73958;
+}
+body .banner-and-nav .color nav div div {
+  width: 50%;
+}
+body .banner-and-nav .color nav div div a {
+  color: rgba(69, 69, 69, 0.75);
+  font-size: 17px;
+  text-decoration: none;
+  font-family: SegoeUI;
+}
+body .banner-and-nav .color nav div div a:hover {
+  color: black;
+}
+body .banner-and-nav .color nav div div .menu-button {
+  display: none;
+  background: none;
+  border: none;
+}
+body .banner-and-nav .color nav div div .login-button {
+  width: 90px;
+  height: 30px;
+  background-color: #de6d6e;
+  border-radius: 3px;
+  font-family: SegoeUI;
+  border: none;
+  font-size: 17px;
+  color: white;
+}
+body .banner-and-nav .color nav div div .login-button img {
+  width: 13px;
+  height: auto;
+  margin-right: 10px;
+}
+body .banner-and-nav .color nav div div .login-button:hover {
+  background-color: #d74748;
+  transition: 1s;
+}
+body .banner-and-nav .color .text-and-circles {
+  width: 100%;
+  color: white;
+  position: absolute;
+  bottom: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .banner-and-nav .color .text-and-circles .circles {
+  margin-bottom: 40px;
+  position: relative;
+}
+body .banner-and-nav .color .text-and-circles .circles div {
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.6;
+}
+body .banner-and-nav .color .text-and-circles .circles .circ-1 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 30%;
+  left: 60%;
+}
+body .banner-and-nav .color .text-and-circles .circles .circ-2 {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  bottom: 45%;
+  left: 40%;
+}
+body .banner-and-nav .color .text-and-circles .circles .circ-3 {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  right: 15%;
+}
+body .banner-and-nav .color .text-and-circles .text {
+  text-align: center;
+}
+body .banner-and-nav .color .text-and-circles .text h1 {
+  font-family: "Alte Haas Grotesk";
+  font-size: 70px;
+}
+body .banner-and-nav .color .text-and-circles .text h4 {
+  font-size: 25px;
+  font-family: UniversLt;
+  margin-top: 30px;
+}
+body .info {
+  font-family: UniversLt;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .info h1 {
+  font-size: 35px;
+  margin-top: 70px;
+}
+body .info h4 {
+  font-size: 17px;
+  margin-top: 30px;
+  line-height: 30px;
+  width: 70%;
+}
+body .info .pictures {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 70px;
+}
+body .info .pictures figure {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: tan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 40px;
+  position: relative;
+}
+body .info .pictures figure img {
+  transition: 1s;
+}
+body .info .pictures figure figcaption {
+  color: white;
+  font-size: 17px;
+  margin-top: 15px;
+  transition: 1s;
+}
+body .info .pictures figure p {
+  opacity: 0;
+  color: white;
+  position: absolute;
+  width: 80%;
+  font-size: 20px;
+  transition: 1s;
+}
+body .news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+body .news .section {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 60px;
+}
+body .news .section img {
+  width: 200px;
+  height: auto;
+}
+body .news .section .text {
+  font-family: UniversLt;
+  margin-left: 20px;
+}
+body .news .section .text h1 {
+  font-size: 27px;
+  color: #404040;
+  padding-bottom: 20px;
+}
+body .news .section .text h4 {
+  font-size: 15px;
+  color: #8b8b8b;
+  line-height: 25px;
+}
+body footer {
+  background-color: #282d2a;
+  height: auto;
+  font-family: UniversLt;
+  display: flex;
+  justify-content: center;
+}
+body footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+body footer .wrapper .links {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+body footer .wrapper .links .section h3 {
+  font-size: 21px;
+  color: #aeaeae;
+  padding-bottom: 20px;
+}
+body footer .wrapper .links .section a {
+  font-size: 15px;
+  color: #8b8b8b;
+  margin-bottom: 5px;
+  text-decoration: none;
+  display: block;
+}
+body footer .wrapper .links .section a:hover {
+  color: white;
+}
+body footer .wrapper .social-media-and-copyright .social-media {
+  display: flex;
+  justify-content: space-between;
+}
+body footer .wrapper .social-media-and-copyright .social-media a {
+  background-color: #696b6a;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body footer .wrapper .social-media-and-copyright .social-media a:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+body footer .wrapper .social-media-and-copyright p {
+  color: #8b8b8b;
+  padding-top: 20px;
+}
+@media only screen and (max-width: 1000px) {
+  body .banner-and-nav .color nav div {
+    width: 95%;
+  }
+  body .banner-and-nav .color nav div div {
+    width: 70%;
+  }
+  body .banner-and-nav .color .text-and-circles .text {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  body .banner-and-nav .color .text-and-circles .text h4 {
+    line-height: 30px;
+  }
+  body .news .section {
+    width: 90%;
+  }
+  body footer .wrapper {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 840px) {
+  body .info .pictures {
+    margin-top: 30px;
+  }
+  body footer .wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  body footer .wrapper .links {
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body footer .wrapper .links .section {
+    margin: 20px;
+  }
+  body footer .wrapper .social-media-and-copyright {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body .banner-and-nav .color nav {
+    height: 70px;
+  }
+  body .banner-and-nav .color nav div h1 {
+    font-size: 30px;
+  }
+  body .banner-and-nav .color nav div div {
+    width: auto;
+    justify-content: flex-end;
+  }
+  body .banner-and-nav .color nav div div a {
+    display: none;
+  }
+  body .banner-and-nav .color nav div div .menu-button {
+    display: block;
+    margin-right: 10px;
+  }
+  body .banner-and-nav .color nav div div .menu-button img {
+    height: 25px;
+    width: auto;
+  }
+  body .banner-and-nav .color .text-and-circles .text h1 {
+    font-size: 60px;
+  }
+  body .banner-and-nav .color .text-and-circles .text h4 {
+    font-size: 20px;
+  }
+  body .info h1,
+  body .info h4 {
+    width: 90%;
+  }
+  body .info .pictures figure {
+    width: 170px;
+    height: 170px;
+    margin: 20px 20px;
+  }
+  body .info .pictures figure img {
+    width: 60px;
+  }
+  body .news .section {
+    flex-direction: column;
+  }
+  body .news .section .text {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  body .banner-and-nav .color .text-and-circles .text h1 {
+    font-size: 50px;
+  }
+  body footer .wrapper .social-media-and-copyright {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  body footer .wrapper .social-media-and-copyright .social-media {
+    width: 70%;
+  }
+  body footer .wrapper .social-media-and-copyright .social-media a {
+    width: 40px;
+    height: 40px;
+  }
+  body footer .wrapper .social-media-and-copyright .social-media a .facebook {
+    width: 10px;
+  }
+  body footer .wrapper .social-media-and-copyright .social-media a .twitter {
+    width: 20px;
+  }
+  body footer .wrapper .social-media-and-copyright .social-media a .dribble {
+    width: 23px;
+  }
+  body footer .wrapper .social-media-and-copyright .social-media a .share {
+    width: 20px;
+  }
+  body footer .wrapper .social-media-and-copyright p {
+    text-align: center;
+    line-height: 25px;
+  }
+}
