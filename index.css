@@ -28,6 +28,9 @@ body .banner-and-nav .color {
   width: 100%;
   height: inherit;
 }
+body .banner-and-nav .color .nav-for-phones {
+  display: none;
+}
 body .banner-and-nav .color nav {
   background-color: white;
   opacity: 0.9;
@@ -35,6 +38,8 @@ body .banner-and-nav .color nav {
   height: 90px;
   display: flex;
   justify-content: center;
+  z-index: 2;
+  position: relative;
 }
 body .banner-and-nav .color nav div {
   display: flex;
@@ -317,6 +322,38 @@ body footer .wrapper .social-media-and-copyright p {
   }
 }
 @media only screen and (max-width: 600px) {
+  body .banner-and-nav .color .nav-for-phones {
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    top: -100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    min-height: 430px;
+  }
+  body .banner-and-nav .color .nav-for-phones button {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 80px;
+    left: 15px;
+  }
+  body .banner-and-nav .color .nav-for-phones button img {
+    width: 16px;
+  }
+  body .banner-and-nav .color .nav-for-phones .links a {
+    display: block;
+    font-family: SegoeUI;
+    color: black;
+    opacity: 0.9;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 50px;
+  }
   body .banner-and-nav .color nav {
     height: 70px;
   }
@@ -331,8 +368,8 @@ body footer .wrapper .social-media-and-copyright p {
     display: none;
   }
   body .banner-and-nav .color nav div div .menu-button {
-    display: block;
     margin-right: 10px;
+    display: block;
   }
   body .banner-and-nav .color nav div div .menu-button img {
     height: 25px;
@@ -355,6 +392,9 @@ body footer .wrapper .social-media-and-copyright p {
   }
   body .info .pictures figure img {
     width: 60px;
+  }
+  body .info .pictures figure p {
+    font-size: 17px;
   }
   body .news .section {
     flex-direction: column;
